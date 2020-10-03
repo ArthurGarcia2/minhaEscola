@@ -10,8 +10,16 @@
     }else{
         $save = "INSERT INTO disciplinas(disciplina, professor) VALUES ('".$disciplina."', '".$professor."')";
         if (mysqli_query($conecta, $save)){
-            echo 'Ta salvo "mermão"!';
+            $dados = array(
+                'tipo' => 'alert-success',
+                'conteudo' => 'Dados cadastrados com sucesso!!!'
+            );
         }else{
-            echo 'Deu P.T. no salvamento, fassa novamente!';
+            $dados = array(
+                'tipo' => 'alert-danger',
+                'conteudo' => 'Dados não cadastrados com sucesso!!!'
+            );
         }
     }
+
+    echo json_encode($dados);   

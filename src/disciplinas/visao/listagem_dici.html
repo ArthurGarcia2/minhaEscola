@@ -1,5 +1,39 @@
+<div>
+    <a href="index.html">
+        <h4><i class="mdi mdi-keyboard-backspace"></i>Voltar</h4>
+    </a>
+</div>
+<div>
+    <div id="visu_na_page"></div>
+</div>
+
 <div class="row">
-    <div class="col12">
-        <h1>O conteudo vai aqui</h1>
+    <div class="col-12">
+        <div class="card shadow">
+            <div class="card-header">
+                <h4 class="text-primary">
+                    Tabela de Gerenciamento de Disciplinas
+                </h4>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead class="table-primary">
+                            <tr>
+                                <th scope="col" class="text-center">ID</th>
+                                <th scope="col">Disciplina</th>
+                                <th scope="col">Professor</th>
+                                <th scope="col" class="text-center">Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Aqui vem o 'let expor_listagem' do 'src/disciplinas/controle/control_listagem_dici.js' -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
+<script src="src/disciplinas/controle/control_listagem_dici.js"></script>
