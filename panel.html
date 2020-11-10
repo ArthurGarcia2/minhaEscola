@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My School</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="libs/materialDesign/css/materialdesignicons.css">
+</head>
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid bg-primary text-center">
+        <h1 class="display-4 text-center texte-white">Gerenciamento</h1>
+        <p class="lead text-center texte-white">Disciplinas/Alunos</p>
+        <button class="btn btn-dark">
+            <a href="panel.html">
+                <h4><i class="mdi mdi-arrow-up-thick mdi-rotate-270"></i>Voltar</h4>
+            </a>
+        </button>
+
+    </div>
+
+    <div id="conteudo" class="container">
+        <div class="row">
+            <div class="col-6 col-md-2 aluno">
+                <a href="src/aluno/visao/pagina_add_aluno.html" class="btn btn-primary btn-block">
+                    <h1>
+                        <i class="mdi mdi-layers-plus mdi-48px"></i>
+                    </h1>
+                    <p>Cadastro de Alunos</p>
+                </a>
+            </div>
+            <div class="col-6 col-md-2 aluno">
+                <a href="src/aluno/visao/listagem_aluno.html" class="btn btn-primary btn-block">
+                    <h1>
+                        <i class="mdi mdi-format-list-text mdi-48px"></i>
+                    </h1>
+                    <p>Listagem de Alunos</p>
+                </a>
+            </div>
+            <div class="col-6 col-md-2">
+                <a href="src/disciplinas/visao/pagina_add_dici.html" class="btn btn-primary btn-block">
+                    <h1>
+                        <i class="mdi mdi-layers-plus mdi-48px"></i>
+                    </h1>
+                    <p>Cadastro de Diciplinas</p>
+                </a>
+            </div>
+            <div class="col-6 col-md-2">
+                <a href="src/disciplinas/visao/listagem_dici.html" class="btn btn-primary btn-block">
+                    <h1>
+                        <i class="mdi mdi-format-list-text mdi-48px"></i>
+                    </h1>
+                    <p>Listagem de Diciplinas</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid border-top mt-5">
+        <div class="row">
+            <div class="col-12">
+                <p class="text-center">Todos os direitos reservados a ETEC de Lins</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/funcao_conteudo.js"></script>
+    <script src="src/aluno/controle/check_tipo.js"></script>
+
+</body>
+
+</html>

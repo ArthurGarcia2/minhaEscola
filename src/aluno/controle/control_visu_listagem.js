@@ -33,7 +33,7 @@ $(document).ready(function() {
                     $('#nome').attr('disabled', true)
                     $('#curso').val(informacoes[0].curso)
                     $('#curso').attr('disabled', true)
-                    $('#senha').val(informacoes[0].senha)
+                    $('#senha').val(informacoes[0].md5(senha))
                     $('#senha').attr('disabled', true)
 
                     $('#tipo').empty()

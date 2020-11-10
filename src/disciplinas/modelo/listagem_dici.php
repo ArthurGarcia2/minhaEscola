@@ -2,7 +2,9 @@
 
     include('../../conexao/conn.php');
 
-    $banco = "SELECT * FROM disciplinas";
+    session_start();
+
+    $banco = "SELECT * FROM disciplinas WHERE id_aluno = ".$_SESSION['id']."";
 
     $result = mysqli_query($conecta, $banco);
 

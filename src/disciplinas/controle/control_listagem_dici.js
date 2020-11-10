@@ -13,6 +13,7 @@ $(document).ready(function() {
                         <td class="text-center">${informacoes[i].id}</td>
                         <td>${informacoes[i].disciplina}</td>
                         <td>${informacoes[i].professor}</td>
+                        <td>${informacoes[i].nota}</td>
                         <td class="text-center">
                             <button id="${informacoes[i].id}" class="btn btn-info btn_visu btn-sm"><i class="mdi mdi-eye"></i></button>
                             <button id="${informacoes[i].id}" class="btn btn-primary btn_edit btn-sm"><i class="mdi mdi-pencil"></i></button>
