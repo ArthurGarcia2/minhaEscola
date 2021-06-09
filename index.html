@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="libs/materialDesign/css/materialdesignicons.css">
     <title>Login</title>
 </head>
 
@@ -21,9 +22,14 @@
                             <h5>ID</h5>
                             <input type="number" name="id" id="id" class="form-control">
                         </div>
-                        <div class="form-group text-center">
-                            <h5>Senha</h5>
-                            <input type="password" name="senha" id="senha" class="form-control">
+                        <div class="form-group">
+                            <label class="sr-only">Senha</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i data-status="0" class="mdi mdi-eye-off"></i></div>
+                                </div>
+                                <input type="password" class="form-control" id="senha" name="senha">
+                            </div>
                         </div>
                         <div class="from-group row justify-content-end">
                             <div class="col-12 col-md-6 col-sm-6">
@@ -39,6 +45,7 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/jquery-3.5.1.js"></script>
     <script src="src/aluno/controle/control_login_aluno.js"></script>
+    <script src="js/visu_senha.js"></script>
 
 </body>
 
